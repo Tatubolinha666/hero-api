@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <script src="function.js"></script>
+    <title>Hero</title>
+</head>
+
+<body>
+    <img id="sph" src="carecao.png" alt="esquerda">
+    <form class="grid">
+        <h1> Registre seu herói</h1>
+        <form name="cadastro" method="get" action="DbOperation.php">
+            <br><br>
+            <div><br/>Id:<br/><input type="text" name="id" id="id"> <br/>
+                <br/>Name:<br/><input type="text" name="name" id="name"> <br/>
+                <br/>RealName:<br/><input type="text" name="realname" id="realname"><br/>
+                <br/>Team:<br/><input type="text" name="team" id="team"> <br/>
+                <br> Rating: <br> <div class="rating">
+                    <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                    <label for="star5">☆</label>
+                    <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                    <label for="star4">☆</label>
+                    <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                    <label for="star3">☆</label>
+                    <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                    <label for="star2">☆</label>
+                    <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                    <label for="star1">☆</label>
+                    <div class="clear"></div>
+                    </div> <br>
+            <input type="reset" name="Apagar">
+            <input type="submit" name="Enviar">
+            <button type="button">Alterar</button>
+            <br/>
+            <br/>
+            <a href="#" onclick="document.cadastro.reset()">Apagar</a>
+
+        </form>
+        </div>
+        </section>
+</body>
+
+</html>
